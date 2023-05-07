@@ -23,4 +23,9 @@ public class Menu : MonoBehaviour
         settingsmenu.SetActive(false);
         menu.SetActive(true);
     }
+
+    public void OnExit()
+    {
+        Application.Quit();
+    }
 }

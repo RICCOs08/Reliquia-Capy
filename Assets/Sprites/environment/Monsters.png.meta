@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 65582b8b12f9e0a448306a4fa006c052
+guid: d71ec17bab7ccbf47b7dd7cc21c35612
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,85 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shelter_Sides_spritelist_0
+      name: Monsters_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 576
-        width: 528
-        height: 544
+        x: 15
+        y: 846
+        width: 531
+        height: 419
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a6baf9f29d39049a518bc8b4a04876
-      internalID: 1515983771
+      spriteID: 2cb3692d03aed6b499659031f8ed0108
+      internalID: -1201670864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shelter_Sides_spritelist_1
+      name: Monsters_1
       rect:
         serializedVersion: 2
-        x: 832
-        y: 560
-        width: 831
-        height: 560
+        x: 546
+        y: 15
+        width: 1024
+        height: 1890
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 938890e13cb16bd448144924629de601
-      internalID: 119082692
+      spriteID: 9394d28beb92d7445b92be9621970ca2
+      internalID: 341380656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shelter_Sides_spritelist_2
+      name: Monsters_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
-        width: 528
-        height: 544
+        x: 1614
+        y: 30
+        width: 932
+        height: 1795
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a65a2b2a41376334b9cd42000067bc98
-      internalID: 1224020641
+      spriteID: c9f150c9458243b4e90e77ce726b80af
+      internalID: 167554601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shelter_Sides_spritelist_3
+      name: Monsters_3
       rect:
         serializedVersion: 2
-        x: 832
-        y: 0
-        width: 832
-        height: 560
+        x: 47
+        y: 302
+        width: 482
+        height: 403
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff7508714b886e4881cfc560fa6d41e
-      internalID: -1700392895
+      spriteID: 96516dc8bd5d2e744bc70058239ac51a
+      internalID: 1094557480
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6048d1b3c03957d4295d3ee3b7fa639e
+    spriteID: 38f2365f30dff4c41aa4a580637b4670
     internalID: 0
     vertices: []
     indices: 
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shelter_Sides_spritelist_0: 1515983771
-      Shelter_Sides_spritelist_1: 119082692
-      Shelter_Sides_spritelist_2: 1224020641
-      Shelter_Sides_spritelist_3: -1700392895
+      Monsters_0: -1201670864
+      Monsters_1: 341380656
+      Monsters_2: 167554601
+      Monsters_3: 1094557480
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
