@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcfde0ae3c9729a4484bcf90dfb20ca4
+guid: 805eb8a7a24d93a4ea81fca279d4394f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 600
+  spritePixelsToUnits: 450
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_0
+      name: Capy_run_spritelist_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 192
-        height: 256
+        x: 0
+        y: 352
+        width: 544
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3f24c17bd7f7544b7e9b63e7ba1778
-      internalID: -827157113
+      spriteID: 00329c41ceabde24db0ad1ad41660358
+      internalID: 802223321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_1
+      name: Capy_run_spritelist_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 192
-        height: 256
+        x: 576
+        y: 352
+        width: 544
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,83 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c3f9a4ea9edfb44d812ae7da2b168ab
-      internalID: -2072193860
+      spriteID: 3c5c571f759d4be4291123ce4276783b
+      internalID: -1441004450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_2
+      name: Capy_run_spritelist_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 192
-        width: 192
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34b87832775f2642aa376c81f3ae969
-      internalID: -706845058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_3
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 192
-        width: 160
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbe4c6ac0513c7e4faef342badba5ed9
-      internalID: 164918226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_4
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 192
-        width: 160
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a66450c6556de246862b5f4a104cfe1
-      internalID: 1844249599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_5
-      rect:
-        serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 288
-        height: 160
+        width: 512
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bd9083e1a217514bbf9dd550d8dc752
-      internalID: -1140348205
+      spriteID: 25ee4092fb011114d9e28e3c49089080
+      internalID: -1461672056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_6
+      name: Capy_run_spritelist_3
       rect:
         serializedVersion: 2
-        x: 352
+        x: 608
         y: 0
-        width: 288
-        height: 160
+        width: 512
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,29 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9059ae8d04441b4aa0524f2ed243cc8
-      internalID: 317707717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_7
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 288
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17de506f4f5ed9e49bad21cf5bc453dd
-      internalID: 1207662633
+      spriteID: 0641e5c127fdb984b88eceb5a83ac268
+      internalID: -1076539801
       vertices: []
       indices: 
       edges: []
@@ -275,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec300fa55a31c8042a95e426564fe617
+    spriteID: 4dc58b836063fb542b213f05801457dc
     internalID: 0
     vertices: []
     indices: 
@@ -283,14 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrelsAndSaucers_spritelist_5: -1140348205
-      barrelsAndSaucers_spritelist_0: -827157113
-      barrelsAndSaucers_spritelist_1: -2072193860
-      barrelsAndSaucers_spritelist_3: 164918226
-      barrelsAndSaucers_spritelist_4: 1844249599
-      barrelsAndSaucers_spritelist_6: 317707717
-      barrelsAndSaucers_spritelist_2: -706845058
-      barrelsAndSaucers_spritelist_7: 1207662633
+      Capy_run_spritelist_0: 802223321
+      Capy_run_spritelist_2: -1461672056
+      Capy_run_spritelist_3: -1076539801
+      Capy_run_spritelist_1: -1441004450
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

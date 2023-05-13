@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcfde0ae3c9729a4484bcf90dfb20ca4
+guid: 08932890849ab7942a1fc55bb621e6a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 600
+  spritePixelsToUnits: 225
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,169 +105,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_0
+      name: Capybaras spritelist_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 192
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a3f24c17bd7f7544b7e9b63e7ba1778
-      internalID: -827157113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 192
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c3f9a4ea9edfb44d812ae7da2b168ab
-      internalID: -2072193860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_2
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 192
-        width: 192
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34b87832775f2642aa376c81f3ae969
-      internalID: -706845058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_3
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 192
-        width: 160
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbe4c6ac0513c7e4faef342badba5ed9
-      internalID: 164918226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_4
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 192
-        width: 160
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a66450c6556de246862b5f4a104cfe1
-      internalID: 1844249599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
+        x: 16
+        y: 480
         width: 288
-        height: 160
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bd9083e1a217514bbf9dd550d8dc752
-      internalID: -1140348205
+      spriteID: 273d3a8c1303e8e47a025a0fcc3d187a
+      internalID: -1112299404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_6
+      name: Capybaras spritelist_1
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
-        width: 288
-        height: 160
+        x: 16
+        y: 256
+        width: 256
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9059ae8d04441b4aa0524f2ed243cc8
-      internalID: 317707717
+      spriteID: a6997cd5005901d4a8ca1ed72545d0ab
+      internalID: 1506632930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrelsAndSaucers_spritelist_7
+      name: Capybaras spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd97e7fe2d69364db402e7483bf0e8f
+      internalID: 1896654273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 97
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65148e23a7c324a458897827076bd15e
+      internalID: -1805911827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 240
+        width: 128
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e680453be20864b4aa04738a32a407c6
+      internalID: -1570023319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 16
+        width: 128
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f057c8939d605c246b93e801148df776
+      internalID: 204426325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 96
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc693f46920dd74593a0b5c8ef69da0
+      internalID: 1732645339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6ddc419664cfb46a7b65c8d9338dc4
+      internalID: 1124992369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 32
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0809803df0bfc5f448aaaa99557089d8
+      internalID: 437964110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_9
       rect:
         serializedVersion: 2
         x: 672
-        y: 0
-        width: 288
-        height: 128
+        y: 272
+        width: 256
+        height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17de506f4f5ed9e49bad21cf5bc453dd
-      internalID: 1207662633
+      spriteID: 0b9bf41f0d5235c45b5fec97665e3de4
+      internalID: -576839177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 496
+        width: 256
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a561c7185f6844e964acb5ad47e703
+      internalID: 1365941548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 16
+        width: 96
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f033a02344c1f2144a9f438dec8b7b12
+      internalID: -1137478339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capybaras spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 16
+        width: 96
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20a1f7009ad45940a3a9df091cc49a1
+      internalID: -1900192238
       vertices: []
       indices: 
       edges: []
@@ -275,7 +380,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec300fa55a31c8042a95e426564fe617
+    spriteID: 0601043f7be4d66498e786dbdd928dd2
     internalID: 0
     vertices: []
     indices: 
@@ -283,14 +388,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrelsAndSaucers_spritelist_5: -1140348205
-      barrelsAndSaucers_spritelist_0: -827157113
-      barrelsAndSaucers_spritelist_1: -2072193860
-      barrelsAndSaucers_spritelist_3: 164918226
-      barrelsAndSaucers_spritelist_4: 1844249599
-      barrelsAndSaucers_spritelist_6: 317707717
-      barrelsAndSaucers_spritelist_2: -706845058
-      barrelsAndSaucers_spritelist_7: 1207662633
+      Capybaras spritelist_6: 1732645339
+      Capybaras spritelist_4: -1570023319
+      Capybaras spritelist_10: 1365941548
+      Capybaras spritelist_1: 1506632930
+      Capybaras spritelist_12: -1900192238
+      Capybaras spritelist_11: -1137478339
+      Capybaras spritelist_5: 204426325
+      Capybaras spritelist_7: 1124992369
+      Capybaras spritelist_2: 1896654273
+      Capybaras spritelist_3: -1805911827
+      Capybaras spritelist_0: -1112299404
+      Capybaras spritelist_9: -576839177
+      Capybaras spritelist_8: 437964110
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
