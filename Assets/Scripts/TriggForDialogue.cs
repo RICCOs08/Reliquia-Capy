@@ -10,6 +10,8 @@ public class TriggForDialogue : MonoBehaviour
     [SerializeField] private GameObject _StartDialogue;
     [SerializeField] private GameObject _DialoguePanel;
 
+    public bool _isDialogueActive;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -26,6 +28,7 @@ public class TriggForDialogue : MonoBehaviour
             _StartDialogue.SetActive(false);
             _DialoguePanel.SetActive(true);
             dialogueSystem.StartDialogue();
+            _isDialogueActive = true;
         }
     }
 
@@ -36,6 +39,7 @@ public class TriggForDialogue : MonoBehaviour
             _isInTrigg = false;
             _DialoguePanel.SetActive(false);
             _StartDialogue.SetActive(false);
+            _isDialogueActive = false;
         }
     }
 }

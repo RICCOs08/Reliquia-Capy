@@ -1,30 +1,27 @@
-using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueSystem : MonoBehaviour
+public class ListInfo : MonoBehaviour
 {
-    public TriggForDialogue TriggForDialogue;
+    private TriggerForInfo trigg;
+    [SerializeField] private GameObject _Info;
 
-    [SerializeField] private GameObject _DialoguePanel;
-    [SerializeField] private GameObject _StartDialogue;
     public string[] lines;
     public float speed;
-    public Text dialogueText;
-
+    public Text infoText;
     public int index;
-    TriggForDialogue trigg;
+
     void Start()
     {
-        dialogueText.text = string.Empty;
+        infoText.text = string.Empty;
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M) && trigg._isDialogueActive == true)
+        if (Input.GetKeyDown(KeyCode.M) && _Info == true)
         {
             SkipText();
         }
@@ -38,21 +35,21 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char c in lines[index].ToCharArray())
         {
-            dialogueText.text += c;
+            infoText.text += c;
             yield return new WaitForSeconds(speed);
         }
     }
 
     public void SkipText()
     {
-        if (dialogueText.text == lines[index])
+        if (infoText.text == lines[index])
         {
-             NextLine();
+            NextLine();
         }
         else
         {
             StopAllCoroutines();
-            dialogueText.text = lines[index];
+            infoText.text = lines[index];
         }
     }
 
@@ -61,12 +58,12 @@ public class DialogueSystem : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
-            dialogueText.text = string.Empty;
+            infoText.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
         {
-            _DialoguePanel.SetActive(false);
+            _Info.SetActive(false);
         }
     }
 }
