@@ -7,7 +7,9 @@ public class TriggerForLoadScene : MonoBehaviour
 {
     [SerializeField] private GameObject _textGo;
     [SerializeField] private int _indexScene;
+    [SerializeField] private SpawnPoint _nextSpawnPoints;
     private bool _isActiveTrigger;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -23,6 +25,7 @@ public class TriggerForLoadScene : MonoBehaviour
     {
         if (_isActiveTrigger && Input.GetKeyDown(KeyCode.N))
         {
+            GameManager.instance.currentSpawnPoint = _nextSpawnPoints;
             SceneManager.LoadScene(_indexScene);
         }
     }

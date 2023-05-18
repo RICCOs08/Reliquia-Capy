@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class TriggForDialogue : MonoBehaviour
 {
-    DialogueSystem dialogueSystem;
+
+    [SerializeField] private DialogueSystem _dialogueSystem;
     private bool _isInTrigg;
     [SerializeField] private GameObject _StartDialogue;
     [SerializeField] private GameObject _DialoguePanel;
-
+    [SerializeField] string[] _lines;
     public bool _isDialogueActive;
 
     private void OnTriggerEnter(Collider other)
@@ -27,7 +28,7 @@ public class TriggForDialogue : MonoBehaviour
         {
             _StartDialogue.SetActive(false);
             _DialoguePanel.SetActive(true);
-            dialogueSystem.StartDialogue();
+            _dialogueSystem.StartDialogue(this, _lines);
             _isDialogueActive = true;
         }
     }
