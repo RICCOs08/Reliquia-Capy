@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 
 public class TriggForDialogue : MonoBehaviour
@@ -10,6 +11,8 @@ public class TriggForDialogue : MonoBehaviour
     private bool _isInTrigg;
     [SerializeField] private GameObject _StartDialogue;
     [SerializeField] private GameObject _DialoguePanel;
+    [SerializeField] private TextMeshProUGUI _panelText;
+    [SerializeField] private string _textForPanel;
     [SerializeField] string[] _lines;
     public bool _isDialogueActive;
 
@@ -18,6 +21,7 @@ public class TriggForDialogue : MonoBehaviour
         if (other.tag == "Player")
         {
             _isInTrigg = true;
+            _panelText.text = _textForPanel;
             _StartDialogue.SetActive(true);
         }
     }

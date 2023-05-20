@@ -43,5 +43,5 @@ public class SpawnController : MonoBehaviour
 
 public enum SpawnPoint
 {
-    Point1, Point2, Point3,
+    Point1, Point2, Point3, Point4, Point5, Point6, Point7, Point8, Point9, Point10, Point11, Point12, Point13, Point14,
 }

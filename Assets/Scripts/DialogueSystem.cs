@@ -32,10 +32,10 @@ public class DialogueSystem : MonoBehaviour
     {
         if(_isStartedDialogue == false)
         {
-            _trigg = trigger;
-            _lines = lines;
-            index = 0;
-            StartCoroutine(StartDialogueCoroutine());
+            _trigg = trigger;                                  
+            _lines = lines;                                       // Обозначение строк для диалога с конкретным персонажем
+            index = 0;                                            // Установка на первую строку
+            StartCoroutine(StartDialogueCoroutine());             // Начало диалога
         }
     }
     private IEnumerator StartDialogueCoroutine()
