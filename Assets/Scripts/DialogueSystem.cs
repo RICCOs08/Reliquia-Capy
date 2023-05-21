@@ -17,7 +17,7 @@ public class DialogueSystem : MonoBehaviour
     private Coroutine _typeLineCoroutine;
     void Start()
     {
-        dialogueText.text = string.Empty;
+        dialogueText.text = "";
     }
 
     private void Update()
@@ -81,6 +81,12 @@ public class DialogueSystem : MonoBehaviour
             _isStartedDialogue = false;
             _trigg = null;
         }
+    }
+
+    public void CloseDialogue()
+    {
+        _lines = null;
+        dialogueText.text = "";
     }
 
 }

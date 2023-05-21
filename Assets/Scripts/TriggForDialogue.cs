@@ -45,6 +45,7 @@ public class TriggForDialogue : MonoBehaviour
             _DialoguePanel.SetActive(false);
             _StartDialogue.SetActive(false);
             _isDialogueActive = false;
+            _dialogueSystem.CloseDialogue();
         }
     }
 }
