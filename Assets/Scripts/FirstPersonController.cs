@@ -11,9 +11,12 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private float _jumpHeight = 1f;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private Transform _groundCheker;
+    [SerializeField] private float _groundChekerRadius;
+
+    public static FirstPersonController instance;
 
     private float _speed;
-    private CharacterController _characterController;
+    public CharacterController characterController;
     private Vector2 _moveDir;
     private Vector2 _mouseDir;
     private Vector3 _move;
@@ -25,13 +28,27 @@ public class FirstPersonController : MonoBehaviour
     private const float G = 9.8f;
     private float _rotationCamY;
     private Transform _cameraTransform;
-
-    void Start()
+    private void Awake()
     {
-        _characterController = GetComponent<CharacterController>();
+        #region Singleton
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        #endregion
+
+        characterController = GetComponent<CharacterController>();
         _cameraTransform = Camera.main.transform;
     }
+    void Start()
+    {
 
+    }
     
     void Update()
     {
@@ -57,7 +74,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void SetGravity()
     {
-        _isGrounded = Physics.CheckSphere(_groundCheker.position, 0.5f, _groundLayer);
+        _isGrounded = Physics.CheckSphere(_groundCheker.position, _groundChekerRadius, _groundLayer);
 
         _move.y -= G * Time.deltaTime;
 
@@ -104,6 +121,11 @@ public class FirstPersonController : MonoBehaviour
 
         _move = transform.TransformDirection(_move);
 
-        _characterController.Move(_move * Time.deltaTime);
+        characterController.Move(_move * Time.deltaTime);
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(_groundCheker.position, _groundChekerRadius);
     }
 }

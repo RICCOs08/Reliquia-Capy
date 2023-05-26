@@ -1,42 +1,53 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public TriggForDialogue TriggForDialogue;
-
     [SerializeField] private GameObject _DialoguePanel;
     [SerializeField] private GameObject _StartDialogue;
-    public string[] lines;
+    private string[] _lines;
     public float speed;
     public Text dialogueText;
 
     public int index;
-    TriggForDialogue trigg;
+    private TriggForDialogue _trigg;
+    private bool _isStartedDialogue;
+
+    private Coroutine _typeLineCoroutine;
     void Start()
     {
-        dialogueText.text = string.Empty;
+        dialogueText.text = "";
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M) && trigg._isDialogueActive == true)
+        if (Input.GetKeyDown(KeyCode.M) && _trigg._isDialogueActive == true && _isStartedDialogue == true)
         {
             SkipText();
         }
     }
 
-    public void StartDialogue()
+    public void StartDialogue(TriggForDialogue trigger, string[] lines)
     {
-        index = 0;
+        if(_isStartedDialogue == false)
+        {
+            _trigg = trigger;                                  
+            _lines = lines;                                       // Обозначение строк для диалога с конкретным персонажем
+            index = 0;                                            // Установка на первую строку
+            StartCoroutine(StartDialogueCoroutine());             // Начало диалога
+        }
     }
+    private IEnumerator StartDialogueCoroutine()
+    {
+        yield return new WaitForEndOfFrame();   
+        NextLine();
+        _isStartedDialogue = true;
+    }
+
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in _lines[index].ToCharArray())
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(speed);
@@ -45,28 +56,37 @@ public class DialogueSystem : MonoBehaviour
 
     public void SkipText()
     {
-        if (dialogueText.text == lines[index])
+        if (dialogueText.text == _lines[index - 1])
         {
-             NextLine();
+            NextLine();
         }
         else
         {
-            StopAllCoroutines();
-            dialogueText.text = lines[index];
+            StopCoroutine(_typeLineCoroutine);
+            dialogueText.text = _lines[index];
         }
     }
 
     public void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index <= _lines.Length - 1)
         {
-            index++;
             dialogueText.text = string.Empty;
-            StartCoroutine(TypeLine());
+            _typeLineCoroutine = StartCoroutine(TypeLine());
+            index++;
         }
         else
         {
             _DialoguePanel.SetActive(false);
+            _isStartedDialogue = false;
+            _trigg = null;
         }
     }
+
+    public void CloseDialogue()
+    {
+        _lines = null;
+        dialogueText.text = "";
+    }
+
 }

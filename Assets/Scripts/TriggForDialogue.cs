@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 
 public class TriggForDialogue : MonoBehaviour
 {
-    DialogueSystem dialogueSystem;
+
+    [SerializeField] private DialogueSystem _dialogueSystem;
     private bool _isInTrigg;
     [SerializeField] private GameObject _StartDialogue;
     [SerializeField] private GameObject _DialoguePanel;
-
+    [SerializeField] private TextMeshProUGUI _panelText;
+    [SerializeField] private string _textForPanel;
+    [SerializeField] string[] _lines;
     public bool _isDialogueActive;
 
     private void OnTriggerEnter(Collider other)
@@ -17,6 +21,7 @@ public class TriggForDialogue : MonoBehaviour
         if (other.tag == "Player")
         {
             _isInTrigg = true;
+            _panelText.text = _textForPanel;
             _StartDialogue.SetActive(true);
         }
     }
@@ -27,7 +32,7 @@ public class TriggForDialogue : MonoBehaviour
         {
             _StartDialogue.SetActive(false);
             _DialoguePanel.SetActive(true);
-            dialogueSystem.StartDialogue();
+            _dialogueSystem.StartDialogue(this, _lines);
             _isDialogueActive = true;
         }
     }
@@ -40,6 +45,7 @@ public class TriggForDialogue : MonoBehaviour
             _DialoguePanel.SetActive(false);
             _StartDialogue.SetActive(false);
             _isDialogueActive = false;
+            _dialogueSystem.CloseDialogue();
         }
     }
 }

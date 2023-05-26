@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682758315785225895}
   - component: {fileID: 8490102416647677924}
+  - component: {fileID: 4746751756042406876}
   m_Layer: 0
   m_Name: Big Barrel not Many Oranjes
   m_TagString: Untagged
@@ -130,3 +131,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FreezeXZAxis: 1
+--- !u!65 &4746751756042406876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8633725788802524613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.4, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0}
