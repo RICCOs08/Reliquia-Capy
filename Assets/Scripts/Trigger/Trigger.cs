@@ -9,17 +9,7 @@ public class Trigger : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
     
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+ 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -37,3 +27,4 @@ public class Trigger : MonoBehaviour
         }
     }
 }
+Û
